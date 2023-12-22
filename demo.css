@@ -2,6 +2,9 @@
 .fa-star, .fa-chart-line {
     color: #0077ff;
 }
+.star-disabled{
+    color:#ccc;
+}
 
 .title {
     display: flex;
@@ -128,7 +131,22 @@ button {
     margin-top: 0;
 }
 
-@media screen and (max-width: 768px){
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+@media screen and (max-width: 405px){
+    footer {
+        display: block;
+        width:400px;
+    }
+    .About {
+        margin:30px 20px;
+    }
     .container {
         flex-direction: column-reverse; 
     }
@@ -136,7 +154,6 @@ button {
         display: block;
         background-color: white;
         padding: 10px;
-
     }
     .container .activity{
         display: block;

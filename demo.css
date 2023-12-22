@@ -1,0 +1,184 @@
+
+.fa-star, .fa-chart-line {
+    color: #0077ff;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+button {
+    margin: 0 auto;
+    padding: 10px 20px;
+    border: rgba(0, 0, 0, 0);
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.container {
+    display:flex;
+}
+
+.popular {
+    border-radius:10px;
+    background-color: rgb(244, 244, 244);
+    padding: 20px;
+    margin: 15px;
+}
+
+.popular .card{
+    display: flex;
+    width: 400px;
+    height: 125px;
+    margin:30px 20px;
+}
+
+.popular .card div {
+    padding: 0px 4px;
+    display: block;
+}
+
+.popular .card img {
+    width: 45%;
+    height: 125px;
+    object-fit: cover;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+}
+
+.activity{
+    display: flex;
+}
+
+.activity .card {
+    width: 400px;
+    height: 450px;
+    margin:30px 20px;
+    padding:0;
+    overflow: hidden;
+}
+
+.activity .card img {
+    height: 350px;
+}
+
+.activity .card div {
+    align-items: center;
+}
+
+.activity .card p {
+    padding: 20px 15px;
+}
+
+
+.container .wrapper {
+    border-radius:10px;
+    background-color: rgb(244, 244, 244);
+    padding: 20px;
+    margin: 15px;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.container .wrapper .test{
+    display:flex;
+}
+
+.card{
+    width: 250px;
+    height: 250px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    margin-top: 0;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color:white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);   
+
+}
+
+.card div{
+    padding: 0px 2px;
+    display: block;
+}
+.card img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.card h3{
+    font-size: 1.2rem;
+    margin: 0;
+    text-align: left;
+}
+
+.card p{
+    font-size: 1rem;
+    text-align: left;
+    margin-top: 0;
+}
+
+@media screen and (max-width: 768px){
+    .container {
+        flex-direction: column-reverse; 
+    }
+    .container .wrapper{
+        display: block;
+        background-color: white;
+        padding: 10px;
+
+    }
+    .container .activity{
+        display: block;
+    }
+    .activity .card {
+        height: 200px;
+        margin: 30px 10px;
+    }
+
+    .activity .card img {
+        height: 150px;
+    }
+
+    .activity .card p {
+        padding: 10px 15px;
+    }
+
+    .card{
+        width: 350px;
+        padding:5px;
+        height:175px;
+        margin: 30px 5px;
+        
+    }
+    .card img{
+        height: 100px;
+    }
+
+    .card div{
+        padding: 0px 10px;
+    }
+
+    .popular {
+        width: 400px;
+        margin:-10px;
+        border-radius: 0px;
+    }
+    
+    .popular .card {
+        display: flex;
+        width: 350px;
+        height: 125px;
+        margin: 15px;
+    }
+}
